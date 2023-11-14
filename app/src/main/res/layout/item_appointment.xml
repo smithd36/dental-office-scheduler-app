@@ -1,0 +1,16 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/txtAppointmentTime"
+        android:layout_width="163dp"
+        android:layout_height="66dp"
+        android:layout_weight="100"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textSize="20sp" />
+</androidx.cardview.widget.CardView>

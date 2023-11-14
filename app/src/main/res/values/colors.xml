@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="unselected_tab_color">#241A4E</color>
+    <color name="selected_tab_color">#403763</color>
+    <color name="calendar_default_color">#B8B8B8</color>
+</resources>

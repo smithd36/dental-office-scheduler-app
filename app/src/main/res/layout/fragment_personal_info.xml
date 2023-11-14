@@ -1,0 +1,128 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtPatientName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="124dp"
+            android:layout_marginBottom="19dp"
+            android:hint="@string/patient_name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/edtDateOfBirth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtPersonalInfoHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="@string/your_info"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSubmitPersonalInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="Schedule My Appointment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtClinicSource" />
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerIdChoices"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDateOfBirth" />
+
+        <EditText
+            android:id="@+id/edtIDNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:hint="@string/id_hint"
+            android:inputType="textPostalAddress"
+            app:layout_constraintBottom_toTopOf="@+id/edtAppointmentDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerIdChoices" />
+
+        <Spinner
+            android:id="@+id/spinnerIdChoices"
+            android:layout_width="346dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="9dp"
+            android:text="Select ID Type"
+            app:layout_constraintBottom_toTopOf="@+id/edtIDNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtAddress" />
+
+        <EditText
+            android:id="@+id/edtClinicSource"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="186dp"
+            android:hint="@string/clinic_source"
+            android:inputType="textPostalAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtAppointmentDescription" />
+
+        <EditText
+            android:id="@+id/edtAppointmentDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="Reason for visit"
+            android:inputType="textPostalAddress"
+            app:layout_constraintBottom_toTopOf="@+id/edtClinicSource"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtIDNumber" />
+
+        <EditText
+            android:id="@+id/edtDateOfBirth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/date_of_birth"
+            android:inputType="date"
+            app:layout_constraintBottom_toTopOf="@+id/edtAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPatientName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
