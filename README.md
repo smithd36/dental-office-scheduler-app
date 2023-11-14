@@ -1,1 +1,1 @@
-"# Dental Appointment Tracker and Scheduler" 
+# Dental Appointment Tracker and Scheduler
